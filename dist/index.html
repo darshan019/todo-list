@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div class="top">TODO-LIST</div>
+        <div class="contain">
+            <div class="sidebar">
+                <form>
+                    <label for="name">Enter project name: </label>
+                    <p style="display: flex;">
+                    <input id="name" type="text"><button id="submit">Add</button></p>
+                </form>
+                <div class="project-div"></div>
+            </div>
+            <div class="tasks-related">
+                <div class="details">
+                    <div id="inputs">
+                        <label for="title">Title</label>
+                        <input type="text" id="title">
+                        <label for="date">Due Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div id="select">
+                        <label for="priority">Priority</label>
+                        <select id="priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">high</option>
+                        </select>
+                        <label for="folder">Select Folder</label>
+                        <select id="folder"></select>
+                    </div>
+                </div>
+                <button style="display: flex; width: 100px; justify-content: center;" id="clrAll">Clear Memory</button>
+                <label for="decription">Description</label>
+                <textarea style="width: 300px; font-size: 20px; height: 100px;" name="decription" id="description"></textarea>
+                <p style="margin: 7px 0px 0px -25px;"><button id="add">Add Details</button></p>
+                <p style="display: flex; margin: 45px 0px 0px 0px; font-size: 20px; color: #64748b;">YOUR TASKS (Select the folder after adding the details to view your tasks below)</p>
+            </div>
+            <div class="task-lists"></div>
+        </div>
+    </div>
+</body>
+</html>
